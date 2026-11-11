@@ -2,7 +2,7 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import swup from '@swup/astro'
 import robotsTxt from 'astro-robots-txt'
-import { defineConfig } from 'astro/config'
+import { defineConfig, passthroughImageService } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 import UnoCSS from 'unocss/astro'
@@ -14,6 +14,9 @@ export default defineConfig({
   site: themeConfig.site.website,
   prefetch: true,
   base: '/',
+  image: {
+    service: passthroughImageService(),
+  },
   vite: {
     plugins: [
       // eslint-disable-next-line ts/ban-ts-comment
