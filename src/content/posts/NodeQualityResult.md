@@ -2,6 +2,7 @@
 title: "山西联通 NodeQuality 测试结果"
 pubDate: "2026-11-11"
 description: "搬瓦工 Ultra Singapore 机房山西联通节点网络质量综合测评报告。"
+categories: ["测试"] 
 tags: ["评测", "VPS"]
 ---
 
